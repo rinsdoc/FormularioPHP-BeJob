@@ -57,6 +57,9 @@
 
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
+            // Redirect user to thank you page
+            header('Location: thankyou.html');
+            exit;
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
