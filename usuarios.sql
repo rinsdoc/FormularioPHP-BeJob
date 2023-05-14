@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-04-2023 a las 14:02:13
+-- Tiempo de generación: 14-05-2023 a las 18:51:37
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -39,8 +39,28 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`ID`, `NOMBRE`, `APELLIDO`, `EMAIL`) VALUES
-(0, 'Alicia', 'Gomez', 'Ali@hotmail.com'),
-(0, 'Pedro', 'Jimenez', 'pedrito@hotmail.com');
+(1, 'Alicia', 'Gomez', 'Ali@hotmail.com'),
+(2, 'Pedro', 'Jimenez', 'pedrito@hotmail.com');
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
